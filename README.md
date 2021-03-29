@@ -1,1 +1,1 @@
-# WCF-Service-CS
+# WCF C# Service for restaurants reviews.
