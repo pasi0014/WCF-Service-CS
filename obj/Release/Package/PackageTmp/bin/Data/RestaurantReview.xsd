@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="https://www.algonquincollege.com/cst8259/labs" xmlns:alg="https://www.algonquincollege.com/cst8259/labs" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="restaurant_reviews">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" name="restaurant">
+          <xs:complexType>
+              <xs:sequence>
+                <xs:element name="name" type="xs:string" />
+                <xs:element name="website" type="xs:string" />
+                <xs:element name="logo">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="source" type="xs:string" />
+                      <xs:element name="height">
+                        <xs:complexType>
+                          <xs:simpleContent>
+                            <xs:extension base="xs:unsignedByte">
+                              <xs:attribute name="unit" type="xs:string" use="required" />
+                            </xs:extension>
+                          </xs:simpleContent>
+                        </xs:complexType>
+                      </xs:element>
+                      <xs:element name="width">
+                        <xs:complexType>
+                          <xs:simpleContent>
+                            <xs:extension base="xs:unsignedByte">
+                              <xs:attribute name="unit" type="xs:string" use="required" />
+                            </xs:extension>
+                          </xs:simpleContent>
+                        </xs:complexType>
+                      </xs:element>
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+
+                <xs:element ref="alg:address" />
+                
+                <xs:element name="phone">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="area_code" type="xs:unsignedShort" />
+                      <xs:element name="number" type="xs:unsignedInt" />
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="food" type="xs:string" />
+                <xs:element name="prices">
+                  <xs:complexType>
+                    <xs:simpleContent>
+                      <xs:extension base="xs:unsignedByte">
+                        <xs:attribute name="max" type="xs:unsignedByte" use="required" />
+                        <xs:attribute name="min" type="xs:unsignedByte" use="required" />
+                      </xs:extension>
+                    </xs:simpleContent>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="reviews">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="review">
+                        <xs:complexType>
+                          <xs:sequence>
+                            <xs:element name="reviewer">
+                              <xs:complexType>
+                                <xs:sequence>
+                                  <xs:element name="first_name" type="xs:string" />
+                                  <xs:element name="middle_name" type="xs:string" />
+                                  <xs:element name="last_name" type="xs:string" />
+                                </xs:sequence>
+                                <xs:attribute name="gender" type="xs:string" use="required" />
+                              </xs:complexType>
+                            </xs:element>
+                            <xs:element name="date" type="xs:date" />
+                            <xs:element name="rating">
+                              <xs:complexType>
+                                <xs:simpleContent>
+                                  <xs:extension base="xs:unsignedByte">
+                                    <xs:attribute name="max" type="xs:unsignedByte" use="optional" />
+                                    <xs:attribute name="min" type="xs:unsignedByte" use="optional" />
+                                  </xs:extension>
+                                </xs:simpleContent>
+                              </xs:complexType>
+                            </xs:element>
+                            <xs:element name="summary" type="xs:string" />
+                          </xs:sequence>
+                        </xs:complexType>
+                      </xs:element>
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="menu">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="appetizers">
+                        <xs:complexType>
+                          <xs:sequence>
+                            <xs:element maxOccurs="unbounded" name="appetizer">
+                              <xs:complexType>
+                                <xs:sequence>
+                                  <xs:element ref="alg:item"></xs:element>
+                                </xs:sequence>
+                              </xs:complexType>
+                            </xs:element>
+                          </xs:sequence>
+                        </xs:complexType>
+                      </xs:element>
+                      <xs:element name="entrees">
+                        <xs:complexType>
+                          <xs:sequence>
+                            <xs:element maxOccurs="unbounded" name="entree">
+                              <xs:complexType>
+                                <xs:sequence>
+                                  <xs:element ref="alg:item"></xs:element>
+                                </xs:sequence>
+                              </xs:complexType>
+                            </xs:element>
+                          </xs:sequence>
+                        </xs:complexType>
+                      </xs:element>
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+            
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:int" use="required"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="address">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="apt_number" type="xs:int" />
+        <xs:element name="street" type="xs:string" />
+        <xs:element name="city" type="xs:string" />
+        <xs:element ref="alg:province" />
+        <xs:element ref="alg:postal_code" />
+        <xs:element ref="alg:country" />
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="province">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="ON"/>
+        <xs:enumeration value="QC"/>
+        <xs:enumeration value="BC"/>
+        <xs:enumeration value="ALBT"/>
+        <xs:enumeration value="SK"/>
+        <xs:enumeration value="MB"/>
+        <xs:enumeration value="NL"/>
+        <xs:enumeration value="PEI"/>
+        <xs:enumeration value="NB"/>
+        <xs:enumeration value="NS"/>
+        <xs:enumeration value="NT"/>
+        <xs:enumeration value="NV"/>
+        <xs:enumeration value="YK"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="postal_code">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:pattern value="[a-zA-Z]\d[a-zA-Z](\s)?\d[a-zA-Z]\d"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="country" type="xs:string" />
+
+
+  <xs:element name="item">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="name" type="xs:string" />
+        <xs:element name="description" type="xs:string" />
+        <xs:element maxOccurs="unbounded" name="price">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:decimal">
+                <xs:attribute name="quantity" type="xs:unsignedByte" use="required" />
+                <xs:attribute name="currency" type="xs:string" use="required" />
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+</xs:schema>

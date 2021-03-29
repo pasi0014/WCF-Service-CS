@@ -1,0 +1,9 @@
+C:\Users\Nazar P\Documents\code2021\cst8259\Lab6Service\bin\Lab6Service.dll.config
+C:\Users\Nazar P\Documents\code2021\cst8259\Lab6Service\bin\Lab6Service.dll
+C:\Users\Nazar P\Documents\code2021\cst8259\Lab6Service\bin\Lab6Service.pdb
+C:\Users\Nazar P\Documents\code2021\cst8259\Lab6Service\obj\Release\Lab6Service.csprojAssemblyReference.cache
+C:\Users\Nazar P\Documents\code2021\cst8259\Lab6Service\obj\Release\Lab6Service.dll
+C:\Users\Nazar P\Documents\code2021\cst8259\Lab6Service\obj\Release\Lab6Service.pdb
+C:\Users\Nazar P\Documents\code2021\cst8259\Lab6Service\bin\Data\RestaurantReview.xml
+C:\Users\Nazar P\Documents\code2021\cst8259\Lab6Service\bin\Data\RestaurantReview.cs
+C:\Users\Nazar P\Documents\code2021\cst8259\Lab6Service\bin\Data\RestaurantReview.xsd

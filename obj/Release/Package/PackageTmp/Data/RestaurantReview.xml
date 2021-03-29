@@ -1,0 +1,387 @@
+<?xml version="1.0"?>
+<restaurant_reviews xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="https://www.algonquincollege.com/cst8259/labs">
+  <restaurant id="1">
+    <name>Giovanni's Italia Fine Dining</name>
+    <website>www.giovannis.com</website>
+    <logo>
+      <source>www.gioviannis.com/img/logo.gif</source>
+      <height unit="px">200</height>
+      <width unit="px">200</width>
+    </logo>
+    <address>
+      <apt_number>2100</apt_number>
+      <city>Toronto</city>
+      <country>Canada</country>
+      <Province>ON</Province>
+      <postal_code>K1K 2K2</postal_code>
+      <street>2105 Lakeview Road.</street>
+    </address>
+    <phone>
+      <area_code>416</area_code>
+      <number>1234567</number>
+    </phone>
+    <food>Italian</food>
+    <prices max="5" min="1">1</prices>
+    <reviews>
+      <review>
+        <reviewer gender="male">
+          <first_name>Hunter</first_name>
+          <middle_name>S.</middle_name>
+          <last_name>Thompson</last_name>
+        </reviewer>
+        <date>2020-01-10</date>
+        <rating max="5" min="1">2</rating>
+        <summary>Giovanni’s Italia Fine Dinning is a completely restored Victorian stone house and</summary>
+      </review>
+    </reviews>
+    <menu>
+      <appetizers>
+        <appetizer>
+          <item>
+            <name>Crab Cakes</name>
+            <description>With a creamy dill sauce served with crispy herbed fries. </description>
+            <price quantity="1" currency="CAD">23.00</price>
+          </item>
+        </appetizer>
+        <appetizer>
+          <item>
+            <name />
+            <description>Garden vegetable soup with chocolate sauce.</description>
+            <price quantity="1" currency="CAD">15.00</price>
+          </item>
+        </appetizer>
+        <appetizer>
+          <item>
+            <name>Calamari Fritta</name>
+            <description>
+              Tender rings of squid, dusted in flour and lightly fried, served with sun-dried
+              tomato aioli
+            </description>
+            <price quantity="1" currency="CAD">12.50</price>
+          </item>
+        </appetizer>
+        <appetizer>
+          <item>
+            <name>Charcuterie Board</name>
+            <description>
+              Selection of cheeses and cured meats served with a variety of breads and crostinis
+            </description>
+            <price quantity="1" currency="CAD">20.00</price>
+          </item>
+        </appetizer>
+      </appetizers>
+      <entrees>
+        <entree>
+          <item>
+            <name>House Specialty</name>
+            <description>
+              Pan seared chicken supreme with a sun-dried tomato pistachio pesto cream sauce,
+              served with roasted potatoes and seasonal vegetables.
+            </description>
+            <price quantity="1" currency="CAD">28.00</price>
+          </item>
+        </entree>
+        <entree>
+          <item>
+            <name />
+            <description>
+              Braised jumbo sea scallops on a sun-dried roast tomato base.
+            </description>
+            <price quantity="1" currency="CAD">39.00</price>
+          </item>
+        </entree>
+        <entree>
+          <item>
+            <name />
+            <description>
+              Free-range chicken breast stuffed with morels in a brandy sauce.
+            </description>
+            <price quantity="1" currency="CAD">31.00</price>
+          </item>
+        </entree>
+        <entree>
+          <item>
+            <name>Eggplant Pamigiana</name>
+            <description>
+              Fresh eggplant, thinly sliced and breaded, topped with tomato sauce and
+              mozzarella cheese, baked golden brown. Served with linguine in tomato sauce.
+            </description>
+            <price quantity="1" currency="CAD">30.00</price>
+          </item>
+        </entree>
+        <entree>
+          <item>
+            <name />
+            <description>
+              Roast pork loin on a bed of garlic ginger apple slaw.
+            </description>
+            <price quantity="1" currency="CAD">34.00</price>
+          </item>
+        </entree>
+      </entrees>
+    </menu>
+  </restaurant>
+  <restaurant id="2">
+    <name>Gong's Asian Cuisine</name>
+    <website>www.asiancuisine.com</website>
+    <logo>
+      <source>www.asiancuisine.com/resouce/images/cuisine.jpg</source>
+      <height unit="px">250</height>
+      <width unit="px">250</width>
+    </logo>
+    <address>
+      <apt_number>1385</apt_number>
+      <city>Ottawa</city>
+      <country>Canada</country>
+      <Province>ON</Province>
+      <postal_code>K2G 1V8</postal_code>
+      <street>Woodroffe Avenue</street>
+    </address>
+    <phone>
+      <area_code>613</area_code>
+      <number>7274723</number>
+    </phone>
+    <food>Asian</food>
+    <prices max="5" min="1">4</prices>
+    <reviews>
+      <review>
+        <reviewer gender="female">
+          <first_name>Brenda</first_name>
+          <middle_name>P.</middle_name>
+          <last_name>Smith</last_name>
+        </reviewer>
+        <date>2020-12-03</date>
+        <rating max="5" min="1">5</rating>
+        <summary>
+          The food is always consistent. A good variety of dim sum, sushi, Chinese and
+          even Vietnamese dishes. The service is quick and the food is plentiful. We sat
+          down last night and within seconds of turning in our first order, the plates were on
+          the table! The teriyaki dishes had the right amount of sauce and weren't
+          sickeningly sweet. The chicken, fish, and beef were perfectly cooked. The makirolls were neatly rolled, cut properly and seasoned well. Loved the General Tao
+          chicken, the steamed BBQ pork buns, the eel sushi and the lovely eggplant. We
+          will be going back again! I would highly recommend it.
+        </summary>
+      </review>
+    </reviews>
+    <menu>
+      <appetizers>
+        <appetizer>
+          <item>
+            <name>
+              Egg Roll
+            </name>
+            <description />
+            <price quantity="1" currency="CAD">1.50</price>
+            <price quantity="12" currency="CAD">15.00</price>
+          </item>
+        </appetizer>
+        <appetizer>
+          <item>
+            <name>Spring Roll</name>
+            <description />
+            <price quantity="1" currency="CAD">1.90</price>
+            <price quantity="12" currency="CAD">20.00</price>
+          </item>
+        </appetizer>
+        <appetizer>
+          <item>
+            <name>Shrimp Chips</name>
+            <description />
+            <price quantity="1" currency="CAD">2.50</price>
+          </item>
+        </appetizer>
+        <appetizer>
+          <item>
+            <name>Fried Noodles</name>
+            <description />
+            <price quantity="1" currency="CAD">1.00</price>
+          </item>
+        </appetizer>
+        <appetizer>
+          <item>
+            <name>Sweet &amp; Sour Fried Wonton Skin</name>
+            <description />
+            <price quantity="12" currency="CAD">3.50</price>
+          </item>
+        </appetizer>
+      </appetizers>
+      <entrees>
+        <entree>
+          <item>
+            <name>Scallops with Vegetables</name>
+            <description />
+            <price quantity="1" currency="CAD">14.95</price>
+          </item>
+        </entree>
+        <entree>
+          <item>
+            <name>Sweet and Sour Fish Cantonese Style</name>
+            <description />
+            <price quantity="1" currency="CAD">13.95</price>
+          </item>
+        </entree>
+        <entree>
+          <item>
+            <name>Shrimps with Vegetables</name>
+            <description />
+            <price quantity="1" currency="CAD">12.95</price>
+          </item>
+        </entree>
+        <entree>
+          <item>
+            <name>Beef with Mushroom</name>
+            <description />
+            <price quantity="1" currency="CAD">12.25</price>
+          </item>
+        </entree>
+        <entree>
+          <item>
+            <name>Beef with Tomato</name>
+            <description />
+            <price quantity="1" currency="CAD">10.25</price>
+          </item>
+        </entree>
+        <entree>
+          <item>
+            <name>Beef with Broccoli</name>
+            <description />
+            <price quantity="1" currency="CAD">9.25</price>
+          </item>
+        </entree>
+      </entrees>
+    </menu>
+  </restaurant>
+  <restaurant id="3">
+    <name>Baker Street TexMex Grill</name>
+    <website>
+      www.texmaxgrill.com
+    </website>
+    <logo>
+      <source>www.texmex.com/images/texmex.jpg </source>
+      <height unit="px">150</height>
+      <width unit="px">150</width>
+    </logo>
+    <address>
+      <apt_number>200</apt_number>
+      <city>Ottawa</city>
+      <country>Canada</country>
+      <Province>ON</Province>
+      <postal_code>B1G 1V1</postal_code>
+      <street>Baker Street</street>
+    </address>
+    <phone>
+      <area_code>613</area_code>
+      <number>3334444</number>
+    </phone>
+    <food>Mexican</food>
+    <prices max="5" min="1">3</prices>
+    <reviews>
+      <review>
+        <reviewer gender="male">
+          <first_name>Peter</first_name>
+          <middle_name />
+          <last_name>Jones</last_name>
+        </reviewer>
+        <date>2021-01-03</date>
+        <rating max="5" min="1">3</rating>
+        <summary>
+          My favorite restaurant in Ottawa. The family who owns it are very warm and
+          lovely people. They are incredible at recognizing you when you come back. The
+          burritos are super good. You can customize however you want (guac is included!).
+          I especially love that there is cactus in the veggie mix; it is a small, special thing
+          that sets this place apart from other Mexican spots downtown.
+        </summary>
+      </review>
+    </reviews>
+    <menu>
+      <appetizers>
+        <appetizer>
+          <item>
+            <name>Chips and Pico De Gallo, Gluten friendly</name>
+            <description>vegan, vegetarian</description>
+            <price quantity="1" currency="CAD">7.75</price>
+          </item>
+        </appetizer>
+        <appetizer>
+          <item>
+            <name>Chips and Black Beans and Cheese</name>
+            <description />
+            <price quantity="1" currency="CAD">8.75</price>
+          </item>
+        </appetizer>
+        <appetizer>
+          <item>
+            <name>Sopa de Tortilla</name>
+            <description>
+              Tomato-based soup topped with homemade tortilla strips, sour
+              cream, cheese, and avocado
+            </description>
+            <price quantity="1" currency="CAD">6.75</price>
+          </item>
+        </appetizer>
+        <appetizer>
+          <item>
+            <name>Consome de Pollo</name>
+            <description>
+              Chicken broth with rice, chickpeas, carrots, peas, and
+              shredded chicken, served with cilantro, onion, avocado, and lime
+            </description>
+            <price quantity="1" currency="CAD">9.75</price>
+          </item>
+        </appetizer>
+      </appetizers>
+      <entrees>
+        <entree>
+          <item>
+            <name>Burrito</name>
+            <description>
+              Ten-inch flour tortilla filled with black beans, rice, lettuce, cheese, pico de gallo,
+              guacamole, and choice of protein
+            </description>
+            <price quantity="1" currency="CAD">10.50</price>
+          </item>
+        </entree>
+        <entree>
+          <item>
+            <name>Burrito Combo</name>
+            <description>
+              Ten-inch flour tortilla filled with black beans, rice, lettuce, cheese, pico de gallo,
+              guacamole, and choice of protein.
+            </description>
+            <price quantity="1" currency="CAD">13.50</price>
+          </item>
+        </entree>
+        <entree>
+          <item>
+            <name>Burrito Roja</name>
+            <description>
+              Ten-inch flour tortilla filled with Mexican rice, black beans, guacamole, and
+              choice of protein. Bathed in Chilaquile's homemade salsa roja.
+            </description>
+            <price quantity="1" currency="CAD">16.50</price>
+          </item>
+        </entree>
+        <entree>
+          <item>
+            <name>Enchiladas</name>
+            <description>
+              Gluten friendly. Lightly sauteed corn tortillas, choice of filling, covered in
+              Chilaquile's homemade salsa verde or salsa roja, topped with onions,
+            </description>
+            <price quantity="3" currency="CAD">18.50</price>
+          </item>
+        </entree>
+        <entree>
+          <item>
+            <name>Enchiladas de Mole</name>
+            <description>
+              Gluten friendly. Lightly sauteed corn tortillas, choice of filling, covered in mole
+              sauce, topped with onions, sour cream, and crumbled cheese.
+            </description>
+            <price quantity="3" currency="CAD">20.50</price>
+          </item>
+        </entree>
+      </entrees>
+    </menu>
+  </restaurant>
+</restaurant_reviews>

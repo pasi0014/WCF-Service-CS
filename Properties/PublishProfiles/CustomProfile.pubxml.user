@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>http://localhost/OnlineService</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Data/RestaurantReview.xml">
+      <publishTime>03/08/2021 16:11:39</publishTime>
+    </File>
+    <File Include="bin/Lab6Service.dll">
+      <publishTime>03/10/2021 17:25:52</publishTime>
+    </File>
+    <File Include="bin/Lab6Service.pdb">
+      <publishTime>03/10/2021 17:25:52</publishTime>
+    </File>
+    <File Include="Data/RestaurantReview.xml">
+      <publishTime>03/08/2021 16:11:39</publishTime>
+    </File>
+    <File Include="RestaurantReviewService.svc">
+      <publishTime>03/08/2021 09:04:57</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>03/10/2021 17:25:53</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
